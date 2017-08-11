@@ -1,0 +1,12 @@
+@import '../styles/_palette';
+
+.main-header {
+	font-size: 48px;
+	line-height: 56px;
+	font-family: 'proxima_nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	color: $white;
+
+	margin-top: 20px;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,20 @@
+<div class="section-divider">
+	<div class="label">¡Dale play y disfruta!</div>
+	<div class="section-auxiliary">
+		<button class="button button-icon-only disabled spoticon-chevron-left-16"></button>
+		<button class="button button-icon-only spoticon-chevron-right-16"></button>
+	</div>
+</div>
+<div class="list row crsl-inner">
+	<!-- <app-browse-big-card *ngFor="let playlist of featuredPlaylists | async"
+		(click)="seePlaylist($event, playlist)"
+		[name]="playlist.name"
+		[image]="playlist.image"
+		[desc]="playlist.desc">
+	</app-browse-big-card> -->
+	<!-- REPLACE WITH BIG CARD COMPONENT -->
+	<div *ngFor="let playlist of featuredPlaylists | async">
+		{{playlist.name}} {{playlist.image}} {{playlist.desc}}
+	</div>
+	<!--  -->
+</div>

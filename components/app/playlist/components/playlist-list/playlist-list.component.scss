@@ -1,0 +1,54 @@
+@import '../../../styles/_palette';
+
+.playlist-list {
+	margin-top: 30px;
+
+	.col-time:before {
+		content: "\f153";
+		font-family: spoticon;
+		font-style: normal;
+		font-weight: 400;
+		display: inline-block;
+		line-height: inherit;
+		vertical-align: bottom;
+		font-size: 20px;
+	}
+
+	.row {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		.col-sm-4 {
+			flex: 4;
+		}
+		.col-sm-3 {
+			flex: 3;
+		}
+		.col-sm-1 {
+			flex: 1;
+		}
+	}
+
+	.playlist-field-head {
+		display: none;
+	}
+
+	.playlist-field {
+		padding-top: 10px;
+		border-bottom: 1px solid $shark;
+		padding-bottom: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.playlist-list {
+		.playlist-field-head {
+			display: flex;
+			border-bottom: 1px solid $shark;
+			padding-bottom: 5px;
+		}
+		.row {
+			flex-direction: row;
+		}
+	}
+}

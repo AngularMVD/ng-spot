@@ -1,0 +1,23 @@
+@import '../../../styles/_palette';
+
+.header-bar {
+	border-top: 1px solid $shark;
+	border-bottom: 1px solid $shark;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 36px;
+
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+
+		a {
+			color: $astral;
+			text-decoration: none;
+		}
+	}
+}

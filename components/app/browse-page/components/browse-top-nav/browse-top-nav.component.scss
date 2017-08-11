@@ -1,0 +1,72 @@
+@import '../../../styles/_palette';
+
+.navbar {
+	.nav {
+		&::after {
+			clear: both;
+			content: " ";
+			display: table;
+		}
+		margin: 0;
+		padding-left: 0;
+		list-style: none;
+		border-bottom: 1px solid $shark;
+		& > li {
+			position: relative;
+			display: block;
+			margin: 0 15px;
+			float: left;
+
+			&:first-child,
+			&:first-child .navbar-text {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			& > a {
+				position: relative;
+				display: block;
+				padding: 0px 15px !important;
+				line-height: 44px;
+				color: $oslo-gray;
+				text-transform: uppercase;
+				letter-spacing: 1.1px;
+				font-size: 14px;
+				transition: color 0.2s;
+				border-bottom: none;
+				text-decoration: none;
+				cursor: pointer;
+				padding: 0;
+
+				&:hover,
+				&:focus {
+					color: $athens-gray;
+					text-decoration: none;
+					border-bottom-color: currentcolor;
+					background-color: transparent !important;
+				}
+			}
+			&.active > a {
+				color: $mischka;
+			}
+
+			& > a:after {
+				content: ' ';
+				background-color: transparent;
+				bottom: 0;
+				height: 2px;
+				left: 0;
+				position: absolute;
+				width: 100%;
+				transition: background-color 0.5s;
+			}
+
+			&.active > a:after {
+				background-color: $pistachio;
+			}
+		}
+	}
+}
