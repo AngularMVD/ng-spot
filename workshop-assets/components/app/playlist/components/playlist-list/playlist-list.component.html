@@ -1,0 +1,16 @@
+<div class="playlist-list">
+	<div class="row playlist-field-head">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-4">SONG</div>
+		<div class="col-sm-3">ARTIST</div>
+		<div class="col-sm-3">ALBUM</div>
+		<div class="col-sm-1 col-time"></div>
+	</div>
+	<div class="row playlist-field" *ngFor="let item of list">
+		<div class="col-sm-1">+</div>
+		<div class="col-sm-4">{{item.song}}</div>
+		<div class="col-sm-3">{{item.artist}}</div>
+		<div class="col-sm-3">{{item.album}}</div>
+		<div class="col-sm-1">{{item.duration}}</div>
+	</div>
+</div>

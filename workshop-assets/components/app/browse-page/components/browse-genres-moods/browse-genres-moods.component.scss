@@ -1,0 +1,45 @@
+@import '../../../styles/_palette';
+
+.genres-section {
+	margin-bottom: 0px;
+	padding-top: 20px;
+}
+
+.mini-container {
+	margin: -5px !important;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.section-divider {
+	border-bottom: 1px solid $shark;
+	margin: 0 0 16px;
+	padding: 36px 0 32px;
+	position: relative;
+
+	& > * {
+		text-transform: uppercase;
+		letter-spacing: 1.1px;
+		font-size: 14px;
+		color: $oslo-gray;
+		line-height: 24px;
+		margin: 0;
+		font-weight: 400;
+	}
+
+	& > *:first-child {
+		float: left;
+	}
+
+	& .section-auxiliary {
+		color: $oslo-gray;
+		float: right;
+	}
+}
+
+@media (min-width: 768px) {
+	.mini-container {
+		flex-direction: row;
+	}
+}

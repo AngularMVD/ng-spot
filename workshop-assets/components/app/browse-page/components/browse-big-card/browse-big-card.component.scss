@@ -1,0 +1,69 @@
+@import '../../../styles/_palette';
+
+.mo-wrapper {
+	overflow: hidden;
+	font-size: 14px;
+	padding: 0 15px;
+
+	.mo-image-wrapper {
+		height: 100%;
+		overflow: hidden;
+		padding-bottom: 100%;
+		position: relative;
+	}
+
+	.mo-image {
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		position: absolute;
+		width: 100%;
+	}
+
+	.mo-info {
+		background-color: $shark;
+		padding: 13px 8px 4px;
+		height: 63px;
+		&.description {
+			height: 117px;
+		}
+	}
+
+	.mo-info-wrapper {
+		height: 100%;
+		position: relative;
+	}
+
+	.mo-title {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		border-bottom: none;
+		line-height: 19px;
+		max-height: 38px;
+		position: relative;
+		white-space: normal;
+	}
+
+	.mo-title-border {
+		border-bottom: 1px solid transparent;
+		color: $athens-gray;
+	}
+
+	.mo-description {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		font-size: 12px;
+		margin-bottom: 8px;
+		line-height: 16px;
+		max-height: 48px;
+		position: relative;
+		white-space: normal;
+		margin-top: 10px;
+	}
+}

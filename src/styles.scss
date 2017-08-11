@@ -1,0 +1,10 @@
+@import './assets/styles/fonts.css';
+@import './app/styles/_palette';
+
+body {
+	font-family: 'proxima_nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 19px;
+	color: $oslo-gray;
+	background-color: $woodsmoke;
+}
