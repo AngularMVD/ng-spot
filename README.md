@@ -1,4 +1,6 @@
-# AngularWorkshop
+Proposed solution to the ng-spot workshop. Find here the original instructions [Workshop step-by-step](./workshop-assets/README.md).
+
+# ng-spot
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
 
