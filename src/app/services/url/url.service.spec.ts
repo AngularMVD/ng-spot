@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { UrlServiceService } from './url-service.service';
+import { UrlService } from './url.service';
 
-describe('UrlServiceService', () => {
+describe('UrlService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [UrlServiceService]
+      providers: [UrlService]
     });
   });
 
-  it('should be created', inject([UrlServiceService], (service: UrlServiceService) => {
+  it('should be created', inject([UrlService], (service: UrlService) => {
     expect(service).toBeTruthy();
   }));
 });
