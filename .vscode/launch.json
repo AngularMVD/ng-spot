@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "args": [],
+            "cwd": "${workspaceRoot}/api",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "externalConsole": false,
+            "name": "DEBUG",
+            "outDir": "${workspaceRoot}/dist",
+            "program": "${workspaceRoot}/api/src/server.ts",
+            "request": "launch",
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "preLaunchTask": "compile-develop",
+            "runtimeExecutable": null,
+            "sourceMaps": true,
+            "stopOnEntry": false,
+            "type": "node"
+        },
+        {
+            "name": "Attach",
+            "type": "node",
+            "request": "attach",
+            "port": 5858
+        }
+    ]
+}
