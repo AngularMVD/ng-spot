@@ -1,12 +1,21 @@
-Proposed solution to the ng-spot workshop. Find here the original instructions [Workshop step-by-step](./workshop-assets/README.md).
-
 # ng-spot
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
+Proposed solution to the ng-spot workshop. 
+Find here the original instructions [Workshop step-by-step](./workshop-assets/README.md).
+
+# Description
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version `1.2.6`.
+Currently using the latest version `6.0.1`.
+
+## Start
+
+Restore project dependencies running `npm install` on project's root directory.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
