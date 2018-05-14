@@ -2,11 +2,10 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "cwd": "${workspaceFolder}",
+            "label": "compile-develop",
             "type": "npm",
             "script": "compile-develop",
             "problemMatcher": []
         },
-
     ]
 }

@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.4",
     "reflect-metadata": "^0.1.12",
     "routing-controllers": "^0.7.7"
   }
