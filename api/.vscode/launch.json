@@ -1,16 +1,19 @@
 {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
             "args": [],
-            "cwd": "${workspaceRoot}/api",
+            "cwd": "${workspaceRoot}",
             "env": {
                 "NODE_ENV": "development"
             },
             "externalConsole": false,
             "name": "DEBUG",
             "outDir": "${workspaceRoot}/dist",
-            "program": "${workspaceRoot}/api/src/server.ts",
+            "program": "${workspaceRoot}/src/server.ts",
             "request": "launch",
             "runtimeArgs": [
                 "--nolazy"
