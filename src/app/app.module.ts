@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AppComponent } from './app.component';
 import { LeftNavComponent } from './left-nav/left-nav.component';
@@ -33,7 +33,7 @@ import { UrlService } from './services/url/url.service';
 		PlaylistInfoBarComponent,
 		PlaylistListComponent
 	],
-	imports: [AppRoutingModule, BrowserModule, HttpModule],
+	imports: [AppRoutingModule, BrowserModule, HttpModule, HttpClientModule],
 	providers: [UrlService],
 	bootstrap: [AppComponent]
 })

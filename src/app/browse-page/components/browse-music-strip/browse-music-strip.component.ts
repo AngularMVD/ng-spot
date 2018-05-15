@@ -3,6 +3,7 @@ import { Http } from '@angular/http';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import { UrlService } from '../../../services/url/url.service';
+import { PlaylistService } from '../../../services/playlist/playlist.service';
 
 @Component({
 	selector: 'app-browse-music-strip',
@@ -11,7 +12,7 @@ import { UrlService } from '../../../services/url/url.service';
 })
 export class BrowseMusicStripComponent implements OnInit {
 	featuredPlaylists: Observable<any>;
-	constructor(private http: Http, private router: Router, private url: UrlService) {}
+	constructor(private router: Router, private url: UrlService, private playlistService: PlaylistService) { }
 
 	public seePlaylist(event, feature) {
 		event.preventDefault();
@@ -20,10 +21,7 @@ export class BrowseMusicStripComponent implements OnInit {
 	}
 
 	ngOnInit() {
-		this.featuredPlaylists = this.http
-			.get('assets/database.json')
-			.switchMap(res => Observable.from(res.json().featuredPlaylists))
-			.take(4)
-			.toArray();
+		this.featuredPlaylists = this.playlistService
+			.getAll()
 	}
 }
