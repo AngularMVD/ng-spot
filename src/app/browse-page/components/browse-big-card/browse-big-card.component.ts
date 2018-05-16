@@ -6,7 +6,6 @@ import { Component, Input, OnInit } from '@angular/core';
 	styleUrls: ['./browse-big-card.component.scss']
 })
 export class BrowseBigCardComponent implements OnInit {
-	@Input() id: string;
 	@Input() name: string;
 	@Input() image: string;
 	@Input() desc: string;
