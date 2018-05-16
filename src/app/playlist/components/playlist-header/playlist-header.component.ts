@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { IFeaturedPlayList } from '../../../interfaces/IFeaturedPlaylist';
-import { UrlService } from '../../../services/url/url.service';
 
 @Component({
 	selector: 'app-playlist-header',
@@ -8,11 +7,7 @@ import { UrlService } from '../../../services/url/url.service';
 	styleUrls: ['./playlist-header.component.scss']
 })
 export class PlaylistHeaderComponent implements OnInit {
-	playlist: IFeaturedPlayList;
+	@Input() album: IFeaturedPlayList;
 
-	constructor(private url: UrlService) {}
-
-	ngOnInit() {
-		this.playlist = this.url.currentParams;
-	}
+	ngOnInit() {}
 }

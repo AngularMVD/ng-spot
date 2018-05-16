@@ -8,6 +8,7 @@
 <div class="list row crsl-inner">
 	<app-browse-big-card *ngFor="let playlist of featuredPlaylists | async"
 		(click)="seePlaylist($event, playlist)"
+		[id]="playlist.id"
 		[name]="playlist.name"
 		[image]="playlist.image"
 		[desc]="playlist.desc">

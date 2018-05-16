@@ -6,7 +6,7 @@ import { PlaylistComponent } from '../playlist/playlist.component';
 
 const routes: Routes = [
 	{ path: '', pathMatch: 'full', component: BrowsePageComponent },
-	{ path: 'playlist', component: PlaylistComponent }
+	{ path: 'playlist/:id', component: PlaylistComponent }
 ];
 
 @NgModule({

@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { UrlService } from '../../../services/url/url.service';
+import { Component, OnInit, Input } from '@angular/core';
+import { Observable } from 'rxjs/Observable'
+import { toArray } from 'rxjs/operators';
+
 import { ISong } from '../../../interfaces/IFeaturedPlaylist';
 
 @Component({
@@ -8,11 +10,7 @@ import { ISong } from '../../../interfaces/IFeaturedPlaylist';
 	styleUrls: ['./playlist-list.component.scss']
 })
 export class PlaylistListComponent implements OnInit {
-	list: Array<ISong>;
-	constructor(private url: UrlService){
-	}
+	@Input() playlist: Array<ISong>;
 
-	ngOnInit() {
-		this.list = this.url.currentParams.playlist;
-	}
+	ngOnInit() {}
 }

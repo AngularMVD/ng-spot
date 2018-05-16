@@ -1,11 +1,11 @@
-<div class="header-container">
+<div class="header-container" *ngIf="album">
 	<div class="col-1">
-		<div class="media-image-internal" [style.background-image]="'url('+playlist.image+')'"></div>
+		<div class="media-image-internal" [style.background-image]="'url('+ album.image +')'"></div>
 	</div>
 	<div class="col-2">
 		<div class="playlist">PLAYLIST</div>
-		<div class="playlist-title">{{playlist.name}}</div>
-		<div class="playlist-desc">{{playlist.desc}}</div>
+		<div class="playlist-title">{{album.name}}</div>
+		<div class="playlist-desc">{{album.desc}}</div>
 		<div class="action-buttons">
 			<button class="play-btn btn btn-small">PLAY</button>
 			<button class="follow-btn btn btn-small">FOLLOW</button>
@@ -15,7 +15,7 @@
 	<div class="col-3">
 		<div class="stats">
 			<div>FOLLOWERS</div>
-			<div>{{playlist.followers}}</div>
+			<div>{{album.followers}}</div>
 		</div>
 	</div>
 </div>

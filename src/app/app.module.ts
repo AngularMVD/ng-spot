@@ -16,8 +16,6 @@ import { PlaylistHeaderComponent } from './playlist/components/playlist-header/p
 import { PlaylistInfoBarComponent } from './playlist/components/playlist-info-bar/playlist-info-bar.component';
 import { PlaylistListComponent } from './playlist/components/playlist-list/playlist-list.component';
 
-import { UrlService } from './services/url/url.service';
-
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -34,7 +32,7 @@ import { UrlService } from './services/url/url.service';
 		PlaylistListComponent
 	],
 	imports: [AppRoutingModule, BrowserModule, HttpModule, HttpClientModule],
-	providers: [UrlService],
+	providers: [],
 	bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -6,14 +6,16 @@ import 'rxjs/add/operator/map';
 import 'rxjs/Rx';
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: 'root'
 })
 export class PlaylistService {
+	constructor(public httpClient: HttpClient) { }
 
-  constructor(public httpClient: HttpClient) { }
+	public getAll(): Observable<any> {
+		return this.httpClient.get(`${environment.apiUrl}/playlist`);
+	}
 
-  public getAll(): Observable<any> {
-    return this.httpClient
-      .get(`${environment.apiUrl}/playlist`);
-  }
+	public get(id): Observable<any> {
+		return this.httpClient.get(`${environment.apiUrl}/playlist/${id}`);
+	}
 }
