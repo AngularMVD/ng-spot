@@ -3,6 +3,7 @@ import { createExpressServer, useExpressServer, Action, UnauthorizedError } from
 import { LoggingMiddleware } from './middlewares/logging.middleware';
 import { PlaylistController } from './controllers/playlist.controller';
 import { GenreController } from './controllers/genre.controller';
+import { CustomResponseInterceptor } from './interceptors/custom.response.interceptor';
 
 const expressServer = createExpressServer({
     cors: true,
@@ -11,6 +12,7 @@ const expressServer = createExpressServer({
         LoggingMiddleware,
     ],
     interceptors: [
+        CustomResponseInterceptor
     ],
     controllers: [GenreController, PlaylistController],
 });
