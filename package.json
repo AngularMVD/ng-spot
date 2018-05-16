@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "compile-develop": "tsc",
+	"compile-develop": "cd api && npm run compile-develop",
+	"start:api": "cd api && npm start",
     "postinstall": "cd api && npm install"
   },
   "private": true,
