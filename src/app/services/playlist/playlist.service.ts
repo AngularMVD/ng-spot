@@ -7,7 +7,9 @@ import { environment } from '../../../environments/environment';
 	providedIn: 'root'
 })
 export class PlaylistService {
-	constructor(public httpClient: HttpClient) { }
+	constructor(public httpClient: HttpClient) {
+		console.info('hola');
+	}
 
 	public getAll(): Observable<any> {
 		return this.httpClient.get(`${environment.apiUrl}/playlist`);
