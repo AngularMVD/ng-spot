@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+
+import { PlaylistService } from '../../../services/playlist/playlist.service';
+import { IGenre } from '../../../interfaces/IGenre';
 
 @Component({
 	selector: 'app-browse-genres-moods',
@@ -8,12 +10,10 @@ import { Observable } from 'rxjs/Observable';
 	styleUrls: ['./browse-genres-moods.component.scss']
 })
 export class BrowseGenresMoodsComponent implements OnInit {
-	genres: Observable<any>;
-	constructor(private http: Http) {}
+	genres: Observable<IGenre>;
+	constructor(private playlistService: PlaylistService) {}
 
 	ngOnInit() {
-		this.genres = this.http
-			.get('assets/database.json')
-			.map(res => res.json().genres);
+		this.genres = this.playlistService.getGenres();
 	}
 }

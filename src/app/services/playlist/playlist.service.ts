@@ -18,4 +18,8 @@ export class PlaylistService {
 	public get(id): Observable<any> {
 		return this.httpClient.get(`${environment.apiUrl}/playlist/${id}`);
 	}
+
+	public getGenres(): Observable<any> {
+		return this.httpClient.get(`${environment.apiUrl}/genre`);
+	}
 }

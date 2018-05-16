@@ -6,14 +6,13 @@ import { PlaylistService } from '../services/playlist/playlist.service';
 import { IFeaturedPlayList } from '../interfaces/IFeaturedPlaylist';
 
 @Component({
-  selector: 'app-playlist',
-  templateUrl: './playlist.component.html',
-  styleUrls: ['./playlist.component.scss']
+	selector: 'app-playlist',
+	templateUrl: './playlist.component.html',
+	styleUrls: ['./playlist.component.scss']
 })
 export class PlaylistComponent implements OnInit {
 	album: Observable<IFeaturedPlayList>;
-	constructor(private route: ActivatedRoute, private playlistService: PlaylistService){
-	}
+	constructor(private route: ActivatedRoute, private playlistService: PlaylistService) {}
 
 	ngOnInit() {
 		this.route.params.subscribe(params => {
