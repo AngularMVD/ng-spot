@@ -3,23 +3,6 @@ import { JsonController, Param, Body, Get, Post, Put, Delete } from 'routing-con
 @JsonController()
 export class PlaylistController {
 
-	@Get('/playlist')
-	getAll() {
-		return this.data.map(p => ({
-			id: p.id,
-			name: p.name,
-			image: p.image,
-			desc: p.desc,
-			followers: p.followers
-		}));
-	}
-
-	@Get('/playlist/:id')
-	get(@Param("id") id: any) {
-		const album = this.data.find(p => p.id == id);
-		return album || [];
-	}
-
 	private data = [{
 		"id": "1",
 		"name": "Cafe Libros",

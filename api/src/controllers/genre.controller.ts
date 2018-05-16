@@ -2,10 +2,6 @@ import { JsonController, Param, Body, Get, Post, Put, Delete } from 'routing-con
 
 @JsonController()
 export class GenreController {
-	@Get('/genre')
-	getAll() {
-		return this.data;
-	}
 
 	private data = [
 		{

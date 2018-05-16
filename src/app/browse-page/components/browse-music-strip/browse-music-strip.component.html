@@ -6,7 +6,7 @@
 	</div>
 </div>
 <div class="list row crsl-inner">
-	<app-browse-big-card *ngFor="let playlist of featuredPlaylists | async"
+	<app-browse-big-card *ngFor="let playlist of featuredPlaylists"
 		(click)="seePlaylist($event, playlist)"
 		[name]="playlist.name"
 		[image]="playlist.image"

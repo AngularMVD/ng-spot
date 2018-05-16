@@ -2,7 +2,6 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { PlaylistService } from '../../../services/playlist/playlist.service';
 import { BrowseMusicStripComponent } from './browse-music-strip.component';
 import { BrowseBigCardComponent } from '../browse-big-card/browse-big-card.component';
 

@@ -2,6 +2,6 @@
 	<div>Genres &amp; Moods</div>
 </div>
 <div class="mini-container">
-	<app-browse-mini-card *ngFor="let genre of genres | async" [image]="genre.image" [name]="genre.name">
+	<app-browse-mini-card *ngFor="let genre of genres" [image]="genre.image" [name]="genre.name">
 	</app-browse-mini-card>
 </div>

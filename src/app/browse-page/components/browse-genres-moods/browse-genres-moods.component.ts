@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-
-import { PlaylistService } from '../../../services/playlist/playlist.service';
 import { IGenre } from '../../../interfaces/IGenre';
 
 @Component({
@@ -10,10 +7,54 @@ import { IGenre } from '../../../interfaces/IGenre';
 	styleUrls: ['./browse-genres-moods.component.scss']
 })
 export class BrowseGenresMoodsComponent implements OnInit {
-	genres: Observable<IGenre>;
-	constructor(private playlistService: PlaylistService) {}
+	genres: Array<IGenre>;
 
 	ngOnInit() {
-		this.genres = this.playlistService.getGenres();
+		this.genres = [
+			{
+			  "image": "assets/genres/party.jpg",
+			  "name": "Party"
+			},
+			{
+			  "image": "assets/genres/chill.jpg",
+			  "name": "Chill"
+			},
+			{
+			  "image": "assets/genres/comedy.jpg",
+			  "name": "Comedy"
+			},
+			{
+			  "image": "assets/genres/romance.jpg",
+			  "name": "Romance"
+			},
+			{
+			  "image": "assets/genres/pop.jpg",
+			  "name": "Pop"
+			},
+			{
+			  "image": "assets/genres/latin.jpg",
+			  "name": "Latin"
+			},
+			{
+			  "image": "assets/genres/workout.jpg",
+			  "name": "Workout"
+			},
+			{
+			  "image": "assets/genres/edm.jpg",
+			  "name": "Edm"
+			},
+			{
+			  "image": "assets/genres/indie.jpg",
+			  "name": "Indie"
+			},
+			{
+			  "image": "assets/genres/decades.jpg",
+			  "name": "Decades"
+			},
+			{
+			  "image": "assets/genres/genre.jpg",
+			  "name": "Genre"
+			}
+		];
 	}
 }
